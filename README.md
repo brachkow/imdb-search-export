@@ -1,6 +1,6 @@
 # imdb-search-export
 
-Tool for creating letterboxd from [IMDb advanced search results](https://www.imdb.com/search/title/).
+Tool for creating Letterboxd lists from [IMDb advanced search results](https://www.imdb.com/search/title/).
 
 ## How to use
 
