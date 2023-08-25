@@ -1,13 +1,16 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
 
+// User settings
 const SEARCH_URL =
-  'https://www.imdb.com/search/title/?title_type=feature&user_rating=7.5,&runtime=,100&start=1';
+  'https://www.imdb.com/search/title/?title_type=feature&user_rating=7.5,&runtime=,100&start=1'; // Your search URL
+const PAGES = 20; // How much pages do you want to include
+
+// Site settings. Only edit these values if something not working
 const HEADER_SELECTOR = '.lister-item-header';
 const YEAR_SELECTOR = '.lister-item-year';
 const NAME_SELECTOR = 'a';
-const PAGE_SIZE = 50;
-const PAGES = 1;
+const PAGE_SIZE = 50; // How much movies on one page
 
 (async () => {
   const browser = await chromium.launch(); // Or 'firefox' or 'webkit'.
