@@ -45,10 +45,10 @@ const PAGE_SIZE = 50; // How much movies on one page
       const year = (await yearEl.innerText()).match(/\d{4}/gm)?.join('');
 
       movies.push({
-        Title: title,
-        imdbID: imdbID,
+        Title: `"${title}"`,
+        imdbID: `"${imdbID}"`,
         tmdbID: '', // Because letterboxd wants four fields
-        Year: year,
+        Year: `"${year}"`,
       });
     }
 
